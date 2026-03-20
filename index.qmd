@@ -1,0 +1,40 @@
+---
+title: "Learning Diary"
+subtitle: "Remotely Sensing Cities and Environments"
+author: "Sheng Li"
+format:
+  html:
+    toc: true
+    theme: cosmo
+---
+
+# Welcome
+
+This is my learning diary for **CASA0023: Remotely Sensing Cities and Environments**.
+
+The diary is organised by week. Each entry follows the same structure:
+
+-   **Summary** – key ideas from the lecture/practical, in my own words
+-   **Applications** – examples of how these ideas are used (papers, policy, real-world cases)
+-   **Reflection** – what I understood well, what I’m unsure about, and how I might use it later
+
+------------------------------------------------------------------------
+
+## 📚 Weekly Learning Entries
+
+::: {.d-grid .gap-2}
+[Week 1: Getting Started with Remote Sensing](week1.qmd){.btn .btn-outline-primary .btn-lg role="button"} [Week 2: Sentinel-2 and Reproducible Research](week2.qmd){.btn .btn-outline-primary .btn-lg role="button"} [Week 3: Remote Sensing Data and Corrections](week3.qmd){.btn .btn-outline-primary .btn-lg role="button"} [Week 4: Remote Sensing for Urban Policy](week4.qmd){.btn .btn-outline-primary .btn-lg role="button"} [Week 5: Google Earth Engine for Remote Sensing Analysis](week5.qmd){.btn .btn-outline-primary .btn-lg role="button"} [Week 6: Supervised Classification using Google Earth Engine](week6.qmd){.btn .btn-outline-primary .btn-lg role="button"} [Week 7: Object-based Classification using Google Earth Engine](week7.qmd){.btn .btn-outline-primary .btn-lg role="button"} [Week 8: Urban Temperature Patterns using Google Earth Engine](week8.qmd){.btn .btn-outline-primary .btn-lg role="button"} [Week 9: Synthetic Aperture Radar (SAR) for Land Surface Analysis](week9.qmd){.btn .btn-outline-primary .btn-lg role="button"}
+:::
+
+------------------------------------------------------------------------
+
+## 📝 Module Overview
+
+### Assessment 1 (30%)
+
+-   **Format**: Group presentation (10 minutes)
+-   **Topic**: Policy-focused Earth Observation (EO) pitch
+
+### Assessment 2 (70%)
+
+-   **Format**: Weekly learning diary (this site)

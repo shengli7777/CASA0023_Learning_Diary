@@ -1,0 +1,542 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "CASA0023 Learning Diary",
+    "section": "",
+    "text": "1 Welcome\nThis is my learning diary for CASA0023: Remotely Sensing Cities and Environments.\nThe diary is organised by week. Each entry follows the same structure:",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Learning Diary</span>"
+    ]
+  },
+  {
+    "objectID": "week1.html",
+    "href": "week1.html",
+    "title": "2  Week 1: Getting Started with Remote Sensing",
+    "section": "",
+    "text": "2.1 1. Summary\nThis week, we kicked things off with the fundamental concepts of Remote Sensing (RS) and how satellite imagery can actually help us “see” cities differently. At its core, RS is about grabbing data from the Earth’s surface without being physically there—using sensors on satellites or planes. The whole thing works because different objects (like concrete vs. grass) have their own “spectral signatures”; they absorb and reflect electromagnetic radiation in unique ways (Jensen, 2015).\nIn the lab, I spent some time looking at Sentinel-2 (from ESA) and Landsat data. While Landsat is great for long-term historical trends (Tempfli et al., 2009), Sentinel-2 is a bit of a game-changer for urban studies because of its 10m resolution.\nI chose London as my test case. It’s a messy, complex urban landscape that really tests how well these sensors work. I processed two different views of the city using Sentinel-2 L2A data:\nComparing Figure 2.2 and Figure 2.3, it’s obvious why we don’t just stick to “true” colors. In the False Colour image, spots like Hyde Park and Richmond Park scream at you in red, making it much easier to quantify green space than in the muddy greens of the first image.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Week 1: Getting Started with Remote Sensing</span>"
+    ]
+  },
+  {
+    "objectID": "week1.html#summary",
+    "href": "week1.html#summary",
+    "title": "2  Week 1: Getting Started with Remote Sensing",
+    "section": "",
+    "text": "Figure 2.1: Figure 1: Comparison of satellite sensor specifications and data structure.\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 2.2: Figure 2: True Colour Composite (B04, B03, B02). This looks pretty much like what we’d see from a plane. You can clearly trace the Thames and the dense grey fabric of Central London.\n\n\n\n\n\n\n\n\n\n\n\nFigure 2.3: Figure 3: False Colour Composite (B08, B04, B03). Here, the Near-Infrared (NIR) band makes vegetation “pop” in bright red. The contrast between the grey urban heat and the red parks is striking.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Week 1: Getting Started with Remote Sensing</span>"
+    ]
+  },
+  {
+    "objectID": "week1.html#applications",
+    "href": "week1.html#applications",
+    "title": "2  Week 1: Getting Started with Remote Sensing",
+    "section": "2.2 2. Applications",
+    "text": "2.2 2. Applications\nRemote sensing isn’t just about making cool maps; it’s a heavy-lifter in urban planning and environmental policy. For instance, being able to track urban sprawl or Land Use / Land Cover (LULC) changes over decades is huge. Jensen (2015) highlights how time-series data from Landsat allows us to see exactly how cities “eat” into the surrounding ecosystem.\nWhat I found interesting is its role in the UN Sustainable Development Goals (SDGs). Agencies are increasingly leaning on Earth Observation (EO) to monitor things like forest loss or urban sustainability (Butcher, 2016). It provides a level of “ground truth” that is hard to fake or ignore.\nIn a local context, Sentinel-2’s high resolution is perfect for the “Urban Heat Island” effect. By using the NIR band to calculate indices like NDVI, we can map out exactly where a city is lacking cooling vegetation. It’s gone from being a niche scientific tool to a genuine piece of evidence for city governance.\n\n\n\n\n\n\nFigure 2.4: Figure 4: Analysis of urban green space or vegetation health using Sentinel-2 data.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Week 1: Getting Started with Remote Sensing</span>"
+    ]
+  },
+  {
+    "objectID": "week1.html#reflection",
+    "href": "week1.html#reflection",
+    "title": "2  Week 1: Getting Started with Remote Sensing",
+    "section": "2.3 3. Reflection",
+    "text": "2.3 3. Reflection\nComing from an architecture background, I’m used to looking at cities through site plans and CAD files, which are very “static.” RS feels different—it’s dynamic and continuous. It’s quite powerful to realize that a single image can tell you so much about the health of a city’s parks or the density of its concrete.\nHowever, the practical side is a bit of a steep learning curve. Even just picking the right image without too much cloud cover or figuring out which correction level to use (like L2A vs L1C) took more “trial and error” than I expected. Moving forward, I really want to get better at the actual processing side—not just looking at the images, but digging into the pixel values to do some proper quantitative analysis.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Week 1: Getting Started with Remote Sensing</span>"
+    ]
+  },
+  {
+    "objectID": "week1.html#references",
+    "href": "week1.html#references",
+    "title": "2  Week 1: Getting Started with Remote Sensing",
+    "section": "2.4 References",
+    "text": "2.4 References\n\nButcher, G. (2016) The Role of Remote Sensing in Monitoring the SDGs.\nJensen, J. R. (2015) Introductory Digital Image Processing: A Remote Sensing Perspective. 4th edn. Pearson.\nTempfli, K. et al. (2009) Principles of Remote Sensing. ITC.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Week 1: Getting Started with Remote Sensing</span>"
+    ]
+  },
+  {
+    "objectID": "week2.html",
+    "href": "week2.html",
+    "title": "3  Slide Deck Access and Interaction",
+    "section": "",
+    "text": "3.1 Summary\n:::\nThis week focused on learning how to create reproducible presentations using Xaringan and how to organise coursework within a Quarto portfolio hosted on GitHub. Unlike traditional presentation software such as PowerPoint, Xaringan allows slides to be created using R Markdown syntax. In practice this means that presentations can combine text, code and visual outputs within the same document. As a result, slides can be generated directly from data analysis workflows, which makes the process more transparent and reproducible.\nFor the presentation task I chose to focus on the Sentinel-2 satellite sensor, which forms part of the Copernicus Earth observation programme developed by the European Space Agency (ESA). Sentinel-2 actually consists of two satellites, Sentinel-2A and Sentinel-2B, launched in 2015 and 2017 respectively. Working together, they provide global coverage approximately every five days. This relatively high temporal resolution makes the dataset particularly suitable for monitoring environmental change and urban development over time.\nOne of the key components of Sentinel-2 is the Multispectral Instrument (MSI). This sensor records information across 13 spectral bands that span different parts of the electromagnetic spectrum. Because each band captures different wavelengths of reflected radiation, the sensor can reveal surface characteristics that are not always visible in standard optical imagery. For instance, vegetation reflects strongly in the near-infrared portion of the spectrum, which makes this band particularly useful for identifying plant cover.\nIn the presentation I also discussed how different band combinations can be used to produce different visual representations of satellite imagery. A true colour composite typically uses the visible red, green and blue bands (B04, B03 and B02). The resulting image looks relatively similar to what a person might see from an aircraft or aerial photograph. While this representation is intuitive to interpret, it does not always emphasise environmental patterns very clearly.\nA false colour composite, by contrast, replaces one of the visible bands with near-infrared information. A common combination is B08, B04 and B03. In this configuration vegetation appears bright red because of its strong reflectance in the near-infrared band. This makes vegetation distribution much easier to detect and analyse, particularly in urban landscapes where green spaces may otherwise be difficult to distinguish.\nOverall, the Sentinel-2 sensor provides high-resolution multispectral imagery that supports a wide range of applications, including environmental monitoring, agricultural assessment and urban analysis.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Week 2: Sentinel-2 and Reproducible Research</span>"
+    ]
+  },
+  {
+    "objectID": "week2.html#my-weekly-presentation",
+    "href": "week2.html#my-weekly-presentation",
+    "title": "2  Week 2: Remote Sensing Sensors",
+    "section": "3.1 My Weekly Presentation",
+    "text": "3.1 My Weekly Presentation\nTo view the slides in full screen, please click the blue button below. You can also use the interactive frame to browse the content directly.\nView Full Screen Slides\n\nquarto::quarto_render(output_format = “html”)### Interactive Slides Preview\n```{=html}",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Week 2: Remote Sensing Sensors</span>"
+    ]
+  },
+  {
+    "objectID": "summary.html",
+    "href": "summary.html",
+    "title": "11  Summary",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever.\n\n\nCode\n1 + 1\n\n\n[1] 2",
+    "crumbs": [
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Summary</span>"
+    ]
+  },
+  {
+    "objectID": "week2.html#overview",
+    "href": "week2.html#overview",
+    "title": "2  Weekly Summary: Reproducible Presentations and Sentinel-2",
+    "section": "",
+    "text": "Integration: Combine text, code, and visual outputs in one document.\nTransparency: Slides are generated directly from data analysis workflows.\nReproducibility: Ensuring the presentation stays consistent with the underlying data.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Weekly Summary: Reproducible Presentations and Sentinel-2</span>"
+    ]
+  },
+  {
+    "objectID": "week2.html#sentinel-2-satellite-sensor",
+    "href": "week2.html#sentinel-2-satellite-sensor",
+    "title": "2  Weekly Summary: Reproducible Presentations and Sentinel-2",
+    "section": "2.2 Sentinel-2 Satellite Sensor",
+    "text": "2.2 Sentinel-2 Satellite Sensor\nFor the presentation task, I focused on the Sentinel-2 satellite sensor, part of the Copernicus Earth observation programme developed by the European Space Agency (ESA).\n\n2.2.1 Mission Specifications\n\nSatellites: Sentinel-2A (2015) and Sentinel-2B (2017).\nTemporal Resolution: Global coverage approximately every 5 days.\nApplications: Ideal for monitoring environmental change and urban development.\n\n\n\n2.2.2 The Multispectral Instrument (MSI)\nThe MSI records information across 13 spectral bands. Because each band captures different wavelengths, it reveals surface characteristics invisible to the naked eye.\n\n\n\n\n\n\nFigure 2.1: Spectral bands of the Sentinel-2 Multispectral Instrument (MSI). Source: ESA.\n\n\n\n\n\n2.2.3 Band Combinations\n\n\n\n\n\n\n\n\nCombination\nBands Used\nDescription\n\n\n\n\nTrue Colour\nB04 (Red), B03 (Green), B02 (Blue)\nSimilar to human vision; intuitive but less analytical.\n\n\nFalse Colour\nB08 (NIR), B04 (Red), B03 (Green)\nVegetation appears bright red; excellent for environmental analysis.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Weekly Summary: Reproducible Presentations and Sentinel-2</span>"
+    ]
+  },
+  {
+    "objectID": "week2.html#reflection",
+    "href": "week2.html#reflection",
+    "title": "2  Weekly Summary: Reproducible Presentations and Sentinel-2",
+    "section": "2.3 Reflection",
+    "text": "2.3 Reflection\nThis week’s session shifted the focus from raw data analysis to research communication. Transitioning to Xaringan felt unfamiliar initially, but the benefits of a systematic Markdown workflow soon became clear.\n\n“The integration between Xaringan, Quarto, and GitHub allows everything to be managed within a single reproducible project structure.”\n\n\n2.3.1 Key Takeaways:\n\nWorkflow Integration: Figures generated during analysis flow directly into slides or reports.\nVersion Control: GitHub provides a way to document steps and track changes over time.\nSpatial Importance: Reproducibility is vital for spatial data analysis where processing steps are complex.\n\n\n\n\n\n\n\nFigure 2.2: Example of a reproducible research workflow. Adapted from reproducible research frameworks.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Weekly Summary: Reproducible Presentations and Sentinel-2</span>"
+    ]
+  },
+  {
+    "objectID": "week2.html#references",
+    "href": "week2.html#references",
+    "title": "2  Weekly Summary: Reproducible Presentations and Sentinel-2",
+    "section": "2.4 References",
+    "text": "2.4 References\n\n\nCopernicus Programme (2023) Sentinel-2 Mission Documentation. Available at: https://www.copernicus.eu\nEuropean Space Agency (ESA) (2023) Sentinel-2 Mission Overview. Available at: https://www.esa.int\nJensen, J.R. (2015) Introductory Digital Image Processing: A Remote Sensing Perspective. 4th edn. Upper Saddle River: Pearson.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Weekly Summary: Reproducible Presentations and Sentinel-2</span>"
+    ]
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "1  Introduction",
+    "section": "",
+    "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n\nCode\n1 + 1\n\n\n[1] 2\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "week2.html#slide-deck-access-and-interaction",
+    "href": "week2.html#slide-deck-access-and-interaction",
+    "title": "3  author: “Sheng Li”",
+    "section": "",
+    "text": "Host platform: The full interactive presentation is hosted on GitHub Pages for easier access and navigation.\nOn-page viewing: The embedded frame below allows the slides to be viewed directly on the page.\nFull-screen mode: The link in the note below opens the presentation in a separate browser tab.\n\n\n\n\n\n\n\nNoteSlide Deck Access\n\n\n\nBelow is my embedded slide deck on the Sentinel-2 program. You can view the slides here or click here for the full-screen version.\n\n\n\n\n\n\n\n\n\n\n\n← Prev\n\n\nNext →\n\n\n⛶ Fullscreen",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Week 2: Sentinel-2 and Reproducible Research</span>"
+    ]
+  },
+  {
+    "objectID": "week2.html#summary",
+    "href": "week2.html#summary",
+    "title": "3  Slide Deck Access and Interaction",
+    "section": "",
+    "text": "Figure 3.1: Figure 1. Spectral bands of the Sentinel-2 Multispectral Instrument (MSI), covering visible, near-infrared and shortwave infrared wavelengths. Source: European Space Agency (ESA).\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 3.2: Figure 2. Example of a reproducible research workflow linking data processing, analysis, visualisation and publication. Source: Adapted from reproducible research frameworks.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Week 2: Sentinel-2 and Reproducible Research</span>"
+    ]
+  },
+  {
+    "objectID": "week3.html",
+    "href": "week3.html",
+    "title": "4  Week 3: Remote Sensing Data and Corrections",
+    "section": "",
+    "text": "4.1 Summary\nThis week’s learning focused on the pre-processing and enhancement of remote sensing data, including atmospheric correction, image mosaicking, and image enhancement techniques such as NDVI, filtering, and Principal Component Analysis (PCA). Through the practical exercises, I gradually developed an understanding of how satellite imagery is transformed from raw Digital Number (DN) values into analytically useful reflectance data, as well as how different processing steps influence the final results.\nIn the practical work, I used Landsat 8 Level-2 data and selected London as the study area. Compared to previous work where I analysed the full satellite image, this week I learned how to clip the imagery using administrative boundary data, making the results more geographically meaningful.This process highlighted the importance of data pre-processing in remote sensing analysis.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week 3: Remote Sensing Data and Corrections</span>"
+    ]
+  },
+  {
+    "objectID": "week3.html#summary",
+    "href": "week3.html#summary",
+    "title": "4  Week 3: Remote Sensing Data and Corrections",
+    "section": "",
+    "text": "Figure 4.1: Selection of Landsat 8 imagery for London using USGS Earth Explorer.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week 3: Remote Sensing Data and Corrections</span>"
+    ]
+  },
+  {
+    "objectID": "week3.html#practical-work",
+    "href": "week3.html#practical-work",
+    "title": "4  Week 3: Remote Sensing Data and Corrections",
+    "section": "4.2 Practical Work",
+    "text": "4.2 Practical Work\nIn the practical section, I first completed the loading and processing of Landsat data, and then calculated the Normalized Difference Vegetation Index (NDVI). NDVI reflects vegetation health by measuring the difference between the near-infrared (NIR) and red bands:\n\\[NDVI = \\frac{NIR - Red}{NIR + Red}\\]\nThe results show that NDVI values are higher in the peripheral areas of London, while lower values are observed in the central urban areas. The River Thames is clearly identifiable as a low-value feature, which is consistent with the actual urban structure.\n\n\n\n\n\n\nFigure 4.2: NDVI Analysis\n\n\n\nIn my initial attempt, I analysed the full Landsat image, which resulted in a tilted rectangular scene that I found confusing at first. Through further learning, I realised that this is because Landsat data are acquired based on orbital path/row rather than administrative boundaries. To address this, I downloaded official administrative boundary data for London (London Boroughs) and used the crop() and mask() functions to clip the imagery. After completing this step, the NDVI map accurately represented the spatial form of London, significantly improving the readability of the results.\n\n\n\n\n\n\nFigure 4.3: Boundary of Greater London used to clip the satellite imagery.\n\n\n\nSubsequently, I applied a threshold to the NDVI values (NDVI ≥ 0.2) to generate a vegetation mask, which allowed me to distinguish green spaces from built-up areas within the city. This step helped me to better understand the fundamental logic of remote sensing classification, where simple rules can be used to extract specific land cover types.\n\n\n\n\n\n\n\n\n\nFigure 4.4: NDVI of Greater London\n\n\n\n\n\n\n\n\n\n\n\nFigure 4.5: Vegetation mask of Greater London\n\n\n\n\n\n\nIn addition, I applied a focal filter to the red band to enhance the spatial characteristics of the image. Although the result is less visually intuitive than NDVI, this process helped me understand the role of image enhancement in highlighting spatial patterns and structures.\nFinally, I conducted Principal Component Analysis (PCA) to reduce the dimensionality of the multispectral data into a smaller number of components. The results show that PC1 mainly represents overall brightness, while PC2 and PC3 highlight spectral differences between different land cover types. This method reduces data redundancy while preserving key information, providing an important foundation for further ::: {layout-ncol=“2”} \n :::",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week 3: Remote Sensing Data and Corrections</span>"
+    ]
+  },
+  {
+    "objectID": "week3.html#reflection",
+    "href": "week3.html#reflection",
+    "title": "4  Week 3: Remote Sensing Data and Corrections",
+    "section": "4.3 Reflection",
+    "text": "4.3 Reflection\nThis week’s learning made me realise that remote sensing analysis is not simply about interpreting images, but rather a complete workflow involving data processing, transformation, and interpretation. Compared to previous tasks that focused more on visualisation, this week placed greater emphasis on data processing and methodological understanding, which I found quite challenging.\nDuring the practical work, the main difficulty I encountered was my unfamiliarity with the data processing workflow. For example, I initially used inappropriate data sources for clipping the imagery and struggled to correctly extract the London boundary. These issues were initially confusing, but through experimenting with different datasets (such as GADM, OSM, and eventually the London Borough dataset), I gradually learned how to select suitable data sources and perform spatial clipping effectively. Although this process was time-consuming, it significantly improved my understanding of GIS data structures.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week 3: Remote Sensing Data and Corrections</span>"
+    ]
+  },
+  {
+    "objectID": "week3.html#references",
+    "href": "week3.html#references",
+    "title": "4  Week 3: Remote Sensing Data and Corrections",
+    "section": "4.4 References",
+    "text": "4.4 References\n\nButcher, G. (2016) The Role of Remote Sensing in Monitoring the SDGs. Available at: https://www.un.org/\nJensen, J.R. (2015) Introductory Digital Image Processing. 4th edn. Pearson.\nSchulte to Bühne, H. and Pettorelli, N. (2018) ‘Better together: Integrating and fusing multispectral and radar satellite imagery’, Methods in Ecology and Evolution, 9(4).\nUSGS (2020) Landsat 8 Collection 2 Level-2 Science Product Guide.\nGreater London Authority (GLA) (2023) Statistical GIS Boundary Files for London.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week 3: Remote Sensing Data and Corrections</span>"
+    ]
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "crumbs": [
+      "References"
+    ]
+  },
+  {
+    "objectID": "week4.html",
+    "href": "week4.html",
+    "title": "5  Week 4:Remote Sensing for Urban Policy",
+    "section": "",
+    "text": "5.1 Summary\nThis week focused on exploring how remote sensing data can be used to support urban policy. I chose London as my case study city and looked at the issue of the Urban Heat Island effect in relation to the London Plan, particularly its focus on urban greening and climate adaptation.\nAs urbanisation continues, central London is experiencing higher levels of heat, making it important to consider how increasing green space can help reduce these effects (Figure 1).\nTo support this policy goal, I used the Normalised Difference Vegetation Index (NDVI) as a key indicator derived from remote sensing data. NDVI reflects vegetation coverage and health, making it useful for assessing the distribution of green space in urban areas. It is widely used in urban environmental studies and is also closely linked to Sustainable Development Goal 11 (Sustainable Cities and Communities) (Figure 2).",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Week 4:Remote Sensing for Urban Policy</span>"
+    ]
+  },
+  {
+    "objectID": "week4.html#summary",
+    "href": "week4.html#summary",
+    "title": "5  Week 4:Remote Sensing for Urban Policy",
+    "section": "",
+    "text": "Figure 5.1: Illustration of the Urban Heat Island effect showing temperature differences between urban and rural areas.\n\n\n\n\n\n\n\n\n\n\nFigure 5.2: United Nations Sustainable Development Goals (SDGs), with a focus on Goal 11, which promotes sustainable and liveable cities.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Week 4:Remote Sensing for Urban Policy</span>"
+    ]
+  },
+  {
+    "objectID": "week4.html#applications",
+    "href": "week4.html#applications",
+    "title": "5  Week 4:Remote Sensing for Urban Policy",
+    "section": "5.2 Applications",
+    "text": "5.2 Applications\nIn practice, I used an NDVI map derived from Landsat data (Figure 3) to analyse the spatial distribution of vegetation in London. The results show that NDVI values are generally lower in central urban areas, while higher values are found in the outskirts where vegetation is more abundant. This spatial pattern clearly reflects the relationship between urbanisation and the distribution of green space.\n\n\n\n\n\n\nFigure 5.3: NDVI of Greater London\n\n\n\nFurthermore, by applying an NDVI threshold (NDVI ≥ 0.2), I created a vegetation mask (Figure 4), which makes it easier to distinguish between green and non-green areas across the city. This approach can help policymakers quickly identify areas with limited green space and provide a basis for targeted interventions. For example, areas with lower NDVI values could be prioritised for new green spaces, green roofs, or street vegetation to help reduce local heat stress.\n\n\n\n\n\n\nFigure 5.4: Vegetation mask of Greater London\n\n\n\nRemote sensing data plays an important role in this process. On the one hand, it provides large-scale, continuous, and repeatable data, making it possible to assess environmental conditions at the city level. On the other hand, relatively simple indices and spatial analysis can offer clear and measurable insights to support complex policy decisions. This highlights the potential of remote sensing as a tool for urban governance.\nFrom a broader perspective, this analysis also aligns with global policy frameworks such as the United Nations Sustainable Development Goals (SDG 11), which emphasise improving urban environmental quality and quality of life through increasing green space.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Week 4:Remote Sensing for Urban Policy</span>"
+    ]
+  },
+  {
+    "objectID": "week4.html#reflection",
+    "href": "week4.html#reflection",
+    "title": "5  Week 4:Remote Sensing for Urban Policy",
+    "section": "5.3 Reflection",
+    "text": "5.3 Reflection\nThis week made me realise that remote sensing is not just a technical tool, but also a form of decision support that can directly contribute to policy-making. Compared to previous weeks, which focused more on technical processing, this week required thinking about how to translate data analysis into meaningful policy recommendations, which I found quite challenging.\nThrough this process, I began to understand that the value of remote sensing does not lie in complex algorithms alone, but in how the results are applied to real-world problems. For example, NDVI itself is a relatively simple index, but when used to identify areas lacking green space, it can directly inform urban planning and environmental management.\nIn addition, I realised the importance of data interpretation. The same dataset can support different policy directions, and the key is how it is interpreted within a specific urban context. In the case of London, its historical urban structure and land use patterns have led to uneven distribution of green space, and remote sensing data helps to reveal these spatial differences.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Week 4:Remote Sensing for Urban Policy</span>"
+    ]
+  },
+  {
+    "objectID": "week4.html#references",
+    "href": "week4.html#references",
+    "title": "5  Week 4:Remote Sensing for Urban Policy",
+    "section": "5.4 References",
+    "text": "5.4 References\n\nGerasopoulos, E. et al. (2022) Earth observation: An integral part of a smart and sustainable city. Environmental Science & Policy.\nKadhim, N. et al. (2016) Advances in remote sensing applications for urban sustainability.\nWellmann, T. et al. (2020) Remote sensing in urban planning. Landscape and Urban Planning.\nMartinez, A. & Labib, S. (2023) NDVI for greenness exposure assessments. Environmental Research.\nJensen, J. R. (2015) Introductory Digital Image Processing.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Week 4:Remote Sensing for Urban Policy</span>"
+    ]
+  },
+  {
+    "objectID": "week3.html#applications",
+    "href": "week3.html#applications",
+    "title": "4  Week 3: Remote Sensing Data and Corrections",
+    "section": "4.2 Applications",
+    "text": "4.2 Applications\nIn the practical section, I first completed the loading and processing of Landsat data, and then calculated the Normalized Difference Vegetation Index (NDVI). NDVI reflects vegetation health by measuring the difference between the near-infrared (NIR) and red bands:\n\\[NDVI = \\frac{NIR - Red}{NIR + Red}\\]\nThe results show that NDVI values are higher in the peripheral areas of London, while lower values are observed in the central urban areas. The River Thames is clearly identifiable as a low-value feature, which is consistent with the actual urban structure.\n\n\n\n\n\n\nFigure 4.2: NDVI Analysis\n\n\n\nIn my initial attempt, I analysed the full Landsat image, which resulted in a tilted rectangular scene that I found confusing at first. Through further learning, I realised that this is because Landsat data are acquired based on orbital path/row rather than administrative boundaries. To address this, I downloaded official administrative boundary data for London (London Boroughs) and used the crop() and mask() functions to clip the imagery. After completing this step, the NDVI map accurately represented the spatial form of London, significantly improving the readability of the results.\n\n\n\n\n\n\nFigure 4.3: Boundary of Greater London used to clip the satellite imagery.\n\n\n\nSubsequently, I applied a threshold to the NDVI values (NDVI ≥ 0.2) to generate a vegetation mask, which allowed me to distinguish green spaces from built-up areas within the city. This step helped me to better understand the fundamental logic of remote sensing classification, where simple rules can be used to extract specific land cover types.\n\n\n\n\n\n\n\n\n\nFigure 4.4: NDVI of Greater London\n\n\n\n\n\n\n\n\n\n\n\nFigure 4.5: Vegetation mask of Greater London\n\n\n\n\n\n\nIn addition, I applied a focal filter to the red band to enhance the spatial characteristics of the image. Although the result is less visually intuitive than NDVI, this process helped me understand the role of image enhancement in highlighting spatial patterns and structures.\nFinally, I conducted Principal Component Analysis (PCA) to reduce the dimensionality of the multispectral data into a smaller number of components. The results show that PC1 mainly represents overall brightness, while PC2 and PC3 highlight spectral differences between different land cover types. This method reduces data redundancy while preserving key information, providing an important foundation for further analysis.\n\n\n\n\n\n\n\n\n\nFigure 4.6: Filtered band of Greater London\n\n\n\n\n\n\n\n\n\n\n\nFigure 4.7: PCA of Greater London",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week 3: Remote Sensing Data and Corrections</span>"
+    ]
+  },
+  {
+    "objectID": "week5.html",
+    "href": "week5.html",
+    "title": "6  Week 5:Google Earth Engine for Remote Sensing Analysis",
+    "section": "",
+    "text": "6.1 Summary\nThis week mainly focused on using Google Earth Engine (GEE) for remote sensing data processing and analysis. Through the practical work, I went through the full workflow, including data filtering, image compositing, and calculating indices and simple classifications. Compared to the previous weeks, which were more theory-based, this week was much more hands-on and focused on actually working with data.\nIn this exercise, I chose New York City as my study area (Figure 1) and focused on urban environmental issues, particularly the distribution of green spaces. The aim was to explore how remote sensing data can be used to support urban planning and environmental management in a more practical way.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Week 5:Google Earth Engine for Remote Sensing Analysis</span>"
+    ]
+  },
+  {
+    "objectID": "week5.html#summary",
+    "href": "week5.html#summary",
+    "title": "6  Week 5:Google Earth Engine for Remote Sensing Analysis",
+    "section": "",
+    "text": "Figure 6.1: Figure 1. Study area: New York City boundary and satellite imagery.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Week 5:Google Earth Engine for Remote Sensing Analysis</span>"
+    ]
+  },
+  {
+    "objectID": "week5.html#applications",
+    "href": "week5.html#applications",
+    "title": "6  Week 5:Google Earth Engine for Remote Sensing Analysis",
+    "section": "6.2 Applications",
+    "text": "6.2 Applications\nIn terms of data, I used Landsat 8 Level-2 products and applied temporal filtering (summer 2020) as well as a cloud cover threshold (less than 10%) to obtain relatively clear images. I then created a median composite to combine multiple images into a single representative image, which helped reduce the effects of clouds and noise.\n\n\n\n\n\n\nFigure 6.2: Figure 2. Boundary of New York City (five boroughs) used for clipping the satellite imagery.\n\n\n\nDuring the data processing stage, I first applied scale factors to convert the original digital numbers (DN) into surface reflectance values, which is essential for ensuring reliable analysis. I then used the boundaries of the five boroughs of New York City to clip the imagery (Figure 2), allowing the results to better represent the actual urban extent rather than a simple rectangular area.\n\n\n\n\n\n\nFigure 6.3: Figure 3. True-colour (RGB) composite of New York City based on Landsat 8 imagery.\n\n\n\nFor visualisation, I first created a true-colour (RGB) image (Figure 3), which makes it easier to see the overall urban structure of New York City, such as dense built-up areas, water bodies, and green spaces.\n\n\n\n\n\n\nFigure 6.4: Figure 4. NDVI map of New York City showing spatial variation in vegetation cover.\n\n\n\nBased on this, I calculated the NDVI (Normalized Difference Vegetation Index) to analyse the distribution of vegetation (Figure 4). The results show that NDVI values are generally lower in central New York City, especially in Manhattan, indicating limited vegetation cover. In contrast, higher NDVI values can be observed in the outer areas of the city and in parks such as Central Park, reflecting healthier and denser vegetation.\n\n\n\n\n\n\nFigure 6.5: Figure 5. Vegetation mask derived from NDVI (threshold ≥ 0.3) highlighting green and non-green areas.\n\n\n\nI then applied a threshold (NDVI ≥ 0.3) to create a vegetation mask (Figure 5), which makes it easier to separate green areas from non-green areas. Most built-up areas appear as non-vegetated, while green spaces are mainly found in parks and around the edges of the city, which matches the actual land use quite well.\n\n\n\n\n\n\nFigure 6.6: Figure 6. First principal component (PC1) derived from PCA of Landsat 8 imagery.\n\n\n\nI also tried applying PCA to the multispectral data to explore dimensionality reduction (Figure 6). Although I was able to generate the first principal component (PC1), the visual result was not very clear, probably due to the complexity of the computation and parameter settings. This made me realise that, compared to NDVI, PCA is less straightforward and requires more careful tuning and higher computational effort.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Week 5:Google Earth Engine for Remote Sensing Analysis</span>"
+    ]
+  },
+  {
+    "objectID": "week5.html#reflection",
+    "href": "week5.html#reflection",
+    "title": "6  Week 5:Google Earth Engine for Remote Sensing Analysis",
+    "section": "6.3 Reflection",
+    "text": "6.3 Reflection\nThrough this week’s learning, I developed a deeper understanding of the full workflow of remote sensing data processing, from data selection and preprocessing to analysis and visualisation. I realised that each step can have a significant impact on the final results. In particular, working with GEE allowed me to experience its efficiency in handling large-scale remote sensing data, while also highlighting the computational limitations of more complex analyses such as PCA in a cloud-based environment.\nCompared to previous weeks, I found myself thinking less about how to calculate indices and more about how to use the results in real-world contexts. For example, NDVI and vegetation masks can help identify areas with limited green space, which could be useful for urban planning and addressing urban heat issues.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Week 5:Google Earth Engine for Remote Sensing Analysis</span>"
+    ]
+  },
+  {
+    "objectID": "week5.html#references",
+    "href": "week5.html#references",
+    "title": "6  Week 5:Google Earth Engine for Remote Sensing Analysis",
+    "section": "6.4 References",
+    "text": "6.4 References\n\nGorelick, N., Hancher, M., Dixon, M., Ilyushchenko, S., Thau, D. and Moore, R. (2017) Google Earth Engine: Planetary-scale geospatial analysis for everyone. Remote Sensing of Environment, 202, pp. 18–27.\nJensen, J.R. (2015) Introductory Digital Image Processing: A Remote Sensing Perspective. 4th edn. Pearson.\nAmani, M. et al. (2020) Google Earth Engine Cloud Computing Platform for Remote Sensing Big Data Applications: A Comprehensive Review. IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing, 13, pp. 5326–5350.\nMartinez, A. de la I. and Labib, S.M. (2023) Demystifying normalized difference vegetation index (NDVI) for greenness exposure assessments and policy interventions in urban greening. Environmental Research, 220, 115155.\nUnited Nations (2015) Transforming our world: the 2030 Agenda for Sustainable Development. Available at: https://sdgs.un.org/goals (Accessed: 2026).",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Week 5:Google Earth Engine for Remote Sensing Analysis</span>"
+    ]
+  },
+  {
+    "objectID": "week7.html",
+    "href": "week7.html",
+    "title": "8  Week 7: Object-based Classification using Google Earth Engine",
+    "section": "",
+    "text": "8.1 Summary\nThis week focused on object-based classification using Google Earth Engine (GEE). Compared to last week’s supervised pixel-based classification, this practical introduced a more advanced approach by grouping pixels into meaningful objects before classification. The aim was to understand how segmentation and object-level features can improve classification results.\nIn this exercise, I used Shenzhen as the study area instead of New York City. The focus was on applying object-based image analysis (OBIA) using Sentinel-2 imagery and exploring how segmentation parameters influence classification outcomes.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Week 7: Object-based Classification using Google Earth Engine</span>"
+    ]
+  },
+  {
+    "objectID": "week7.html#applications",
+    "href": "week7.html#applications",
+    "title": "8  Week 7: Object-based Classification using Google Earth Engine",
+    "section": "8.2 Applications",
+    "text": "8.2 Applications\n\n\n\n\n\n\nFigure 8.1: Figure 1. Study area: Shenzhen boundary.\n\n\n\nSimilar to previous weeks, I first defined the study area using the GAUL administrative boundary dataset (Figure 1). The boundary was used to clip all subsequent datasets, ensuring that the analysis was limited to Shenzhen.\n\n\n\n\n\n\nFigure 8.2: Figure 2. Sentinel-2 RGB composite of the study area.\n\n\n\nSentinel-2 Surface Reflectance Harmonized data were used for this analysis. The imagery was filtered by date (2022) and cloud cover (&lt;20%), and scaled to reflectance values. A median composite was generated to reduce cloud contamination. The RGB image (Figure 2) clearly shows the spatial structure of Shenzhen, including urban areas, vegetation, and coastal features.\n\n\n\n\n\n\nFigure 8.3: Figure 3. NDVI of Shenzhen.\n\n\n\nTo better distinguish vegetation, NDVI was calculated using bands B8 and B4 (Figure 3). The NDVI image highlights areas of dense vegetation, particularly in the eastern and mountainous regions, and provides additional information for classification.\n\n\n\n\n\n\nFigure 8.4: Figure 4. SNIC segmentation result (superpixels).\n\n\n\nThe SNIC (Simple Non-Iterative Clustering) algorithm was applied to segment the image into superpixels (Figure 4). This step groups pixels into objects based on spectral and spatial similarity, which helps reduce noise and better represent real-world features. Each segment represents a potential classification unit.\n\n\n\n\n\n\nFigure 8.5: Figure 5. Object-based feature image.\n\n\n\nFrom the SNIC output, object-level features such as mean spectral values and NDVI were extracted (Figure 5). These features were used as inputs for classification, replacing individual pixel values.\n\n\n\n\n\n\nFigure 8.6: Figure 6. Object-based classification result.\n\n\n\nTraining polygons were manually created for three classes: built-up, water, and forest. A CART classifier was trained using these samples and applied to the object-based feature image. The final classification (Figure 6) shows that built-up areas dominate most of Shenzhen, while forested areas are concentrated in the eastern regions. Water bodies are identified but appear limited in extent, which reflects the actual distribution in Shenzhen.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Week 7: Object-based Classification using Google Earth Engine</span>"
+    ]
+  },
+  {
+    "objectID": "week7.html#reflection",
+    "href": "week7.html#reflection",
+    "title": "8  Week 7: Object-based Classification using Google Earth Engine",
+    "section": "8.3 Reflection",
+    "text": "8.3 Reflection\nThis week helped me understand the advantages of object-based classification compared to pixel-based methods. By grouping pixels into objects, the classification result appears more spatially coherent and less noisy.\nOne important observation is that segmentation parameters strongly influence the final result. I tested different seed sizes (e.g., 10 and 20). A smaller seed size (10) was selected for the final output because it captures smaller and fragmented features more effectively. However, this also introduced a more fragmented and slightly noisier classification compared to larger seed sizes.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Week 7: Object-based Classification using Google Earth Engine</span>"
+    ]
+  },
+  {
+    "objectID": "week7.html#references",
+    "href": "week7.html#references",
+    "title": "8  Week 7: Object-based Classification using Google Earth Engine",
+    "section": "8.4 References",
+    "text": "8.4 References\n\nJensen, J.R. (2015) Introductory Digital Image Processing: A Remote Sensing Perspective. 4th edn. Pearson.\nGorelick, N., Hancher, M., Dixon, M., Ilyushchenko, S., Thau, D. and Moore, R. (2017) Google Earth Engine: Planetary-scale geospatial analysis for everyone. Remote Sensing of Environment, 202, pp. 18–27.\nAmani, M. et al. (2020) Google Earth Engine Cloud Computing Platform for Remote Sensing Big Data Applications: A Comprehensive Review. IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing, 13, pp. 5326–5350.\nGoogle (2023) Google Earth Engine Data Catalog: Sentinel-2 MSI Surface Reflectance Harmonized. Available at: https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_S2_SR_HARMONIZED (Accessed: 2026).",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Week 7: Object-based Classification using Google Earth Engine</span>"
+    ]
+  },
+  {
+    "objectID": "week6.html",
+    "href": "week6.html",
+    "title": "7  Week 6: Supervised Classification using Google Earth Engine",
+    "section": "",
+    "text": "7.1 Summary\nThis week focused on supervised classification using Google Earth Engine (GEE). Compared to the previous week, which mainly involved indices such as NDVI, this practical introduced a more advanced workflow, including training data selection and applying a classifier to extract thematic information from satellite imagery.\nIn this exercise, I continued to use New York City as the study area, but instead of analysing vegetation indices, I focused on classifying different land cover types. The aim was to understand how supervised classification works and how training data influences the final results.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Week 6: Supervised Classification using Google Earth Engine</span>"
+    ]
+  },
+  {
+    "objectID": "week6.html#applications",
+    "href": "week6.html#applications",
+    "title": "7  Week 6: Supervised Classification using Google Earth Engine",
+    "section": "7.2 Applications",
+    "text": "7.2 Applications\n\n\n\n\n\n\nFigure 7.1: Figure 1. Study area: New York City boundary and selected region of interest (ROI).\n\n\n\nSimilar to last week, I used the New York City boundary as a reference (Figure 1). However, instead of analysing the entire city, I selected a smaller region of interest (ROI) to reduce computational load and avoid processing errors in GEE.\n\n\n\n\n\n\nFigure 7.2: Figure 2. Sentinel-2 RGB composite of the selected study area.\n\n\n\nFor this practical, I used Sentinel-2 Surface Reflectance Harmonized data. The imagery was filtered by date (summer 2022) and cloud cover (&lt;10%), and scaled to reflectance values. A median composite was generated to reduce cloud contamination. The RGB image (Figure 2) clearly shows the urban structure, including dense built-up areas, water bodies, and green spaces.\n\n\n\n\n\n\nFigure 7.3: Figure 3. Training polygons for supervised classification.\n\n\n\nTo perform supervised classification, I manually digitised training polygons for four land cover classes: built-up, water, grass, and forest (Figure 3). These polygons were distributed across the study area and represented relatively pure examples of each class. This step was particularly important, as the quality and distribution of training data directly affect classification performance.\n\n\n\n\n\n\nFigure 7.4: Figure 4. CART classification result of land cover types.\n\n\n\nUsing the selected spectral bands (B2, B3, B4, B8, B11, B12), I trained a CART (Classification and Regression Tree) classifier and applied it to the image. The classification result (Figure 4) shows a clear distinction between major land cover types. Water bodies are well identified, especially along the river, while built-up areas dominate most of the urban landscape. Vegetation is separated into grass and forest, although some confusion between these two classes is visible.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Week 6: Supervised Classification using Google Earth Engine</span>"
+    ]
+  },
+  {
+    "objectID": "week6.html#reflection",
+    "href": "week6.html#reflection",
+    "title": "7  Week 6: Supervised Classification using Google Earth Engine",
+    "section": "7.3 Reflection",
+    "text": "7.3 Reflection\nThis week helped me understand the full workflow of supervised classification, from selecting training data to applying a classifier and interpreting results. Compared to NDVI analysis in the previous week, classification is more dependent on user input, particularly the quality of training samples.\nOne key insight is that even a simple classifier such as CART can produce reasonable results if the training data is well selected. However, I also noticed that classification noise and misclassification can occur, especially between spectrally similar classes such as grass and forest. Additionally, using a smaller ROI significantly improved performance and avoided issues such as the “Computed value is too large” error in GEE.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Week 6: Supervised Classification using Google Earth Engine</span>"
+    ]
+  },
+  {
+    "objectID": "week6.html#references",
+    "href": "week6.html#references",
+    "title": "7  Week 6: Supervised Classification using Google Earth Engine",
+    "section": "7.4 References",
+    "text": "7.4 References\n\nJensen, J.R. (2015) Introductory Digital Image Processing: A Remote Sensing Perspective. 4th edn. Pearson.\nGorelick, N., Hancher, M., Dixon, M., Ilyushchenko, S., Thau, D. and Moore, R. (2017) Google Earth Engine: Planetary-scale geospatial analysis for everyone. Remote Sensing of Environment, 202, pp. 18–27.\nAmani, M. et al. (2020) Google Earth Engine Cloud Computing Platform for Remote Sensing Big Data Applications: A Comprehensive Review. IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing, 13, pp. 5326–5350.\nPal, M. and Mather, P.M. (2005) Support vector machines for classification in remote sensing. International Journal of Remote Sensing, 26(5), pp. 1007–1011.\nGoogle (2023) Google Earth Engine Data Catalog: Sentinel-2 MSI Surface Reflectance Harmonized. Available at: https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_S2_SR_HARMONIZED (Accessed: 2026).",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Week 6: Supervised Classification using Google Earth Engine</span>"
+    ]
+  },
+  {
+    "objectID": "week8.html",
+    "href": "week8.html",
+    "title": "9  Week 8: Urban Temperature Patterns using Google Earth Engine",
+    "section": "",
+    "text": "9.1 Summary\nThis week focused on analysing urban temperature patterns using Google Earth Engine (GEE). Compared to previous weeks, this practical introduced the use of satellite-derived land surface temperature (LST) data and explored both spatial and temporal variations in temperature.\nThe aim was to understand how temperature differs across urban areas and how different datasets (Landsat and MODIS) can be used for analysis. In this exercise, I used Beijing as the study area and applied both raster-based analysis and spatial aggregation techniques.",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Week 8: Urban Temperature Patterns using Google Earth Engine</span>"
+    ]
+  },
+  {
+    "objectID": "week8.html#applications",
+    "href": "week8.html#applications",
+    "title": "9  Week 8: Urban Temperature Patterns using Google Earth Engine",
+    "section": "9.2 Applications",
+    "text": "9.2 Applications\n\n\n\n\n\n\nFigure 9.1: Figure 1. Study area: Beijing boundary.\n\n\n\nSimilar to previous weeks, I first defined the study area using the GAUL administrative boundary dataset (Figure 1). The boundary was used to clip all subsequent datasets, ensuring that the analysis was limited to Beijing.\n\n\n\n\n\n\nFigure 9.2: Figure 2. Landsat mean summer temperature.\n\n\n\nLandsat 8 data were used to calculate land surface temperature during the summer period (May–September). The data were filtered by date and cloud cover, and scale factors were applied to convert the values into Celsius. A mean temperature image was then generated (Figure 2). The result shows clear spatial variation in temperature across Beijing.\n\n\n\n\n\n\nFigure 9.3: Figure 3. MODIS mean temperature.\n\n\n\nTo complement the Landsat data, MODIS data were also used. MODIS provides lower spatial resolution but much higher temporal frequency. After applying scaling factors and merging Terra and Aqua datasets, a mean temperature image was produced (Figure 3). Compared to Landsat, the MODIS result appears smoother due to its coarser resolution.\n\n\n\n\n\n\nFigure 9.4: Figure 4. Temperature time series.\n\n\n\nA temperature time series was generated using MODIS data (Figure 4). This shows how temperature changes over time during the summer months. The graph indicates fluctuations in temperature, with peaks generally occurring in June and July.\n\n\n\n\n\n\nFigure 9.5: Figure 5. Spatial grid over Beijing.\n\n\n\nSince the GAUL level 2 dataset provided very limited subdivisions for Beijing, a grid-based approach was used instead (Figure 5). A regular fishnet grid was created to divide the study area into smaller spatial units for analysis.\n\n\n\n\n\n\nFigure 9.6: Figure 6. Mean temperature per grid cell.\n\n\n\nUsing the grid, the average temperature for each cell was calculated using the reduceRegions function (Figure 6). This allows temperature to be analysed spatially in a more detailed way. The result shows that central urban areas tend to have higher temperatures, while outer regions are relatively cooler.",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Week 8: Urban Temperature Patterns using Google Earth Engine</span>"
+    ]
+  },
+  {
+    "objectID": "week8.html#reflection",
+    "href": "week8.html#reflection",
+    "title": "9  Week 8: Urban Temperature Patterns using Google Earth Engine",
+    "section": "9.3 Reflection",
+    "text": "9.3 Reflection\nThis week helped me understand the differences between Landsat and MODIS datasets. Landsat provides higher spatial resolution, which is useful for identifying detailed spatial patterns such as urban heat islands. In contrast, MODIS provides higher temporal resolution, making it suitable for analysing changes over time.\nOne challenge I encountered was working with spatial units. Initially, I attempted to use administrative boundaries, but the GAUL level 2 dataset did not provide sufficient detail for Beijing. As a result, I switched to a grid-based approach, which proved to be a more flexible and effective solution.\n\n\n\n\n\n\nFigure 9.7: Figure 7. Spatial distribution of LST and SUHI in Beijing (adapted from Liao et al., 2023).\n\n\n\nTo further evaluate my results, I compared them with a published study showing both LST and SUHI patterns in Beijing (Figure 7). The reference figure indicates that higher temperatures and stronger urban heat island effects are mainly concentrated in the central urban areas, while peripheral regions remain cooler. This pattern is consistent with my own results derived from both Landsat and MODIS datasets, where central Beijing shows relatively higher temperatures.\nHowever, the reference study includes additional analysis such as SUHI classification and uses different datasets (e.g. TRIMS), which were not implemented in my workflow. This suggests that more advanced methods could provide a deeper understanding of urban heat dynamics and could be explored in future work.",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Week 8: Urban Temperature Patterns using Google Earth Engine</span>"
+    ]
+  },
+  {
+    "objectID": "week8.html#references",
+    "href": "week8.html#references",
+    "title": "9  Week 8: Urban Temperature Patterns using Google Earth Engine",
+    "section": "9.4 References",
+    "text": "9.4 References\n\nGorelick, N., Hancher, M., Dixon, M., Ilyushchenko, S., Thau, D. and Moore, R. (2017) Google Earth Engine: Planetary-scale geospatial analysis for everyone. Remote Sensing of Environment, 202, pp. 18–27.\nAmani, M. et al. (2020) Google Earth Engine Cloud Computing Platform for Remote Sensing Big Data Applications: A Comprehensive Review. IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing, 13, pp. 5326–5350.\nGoogle (2023) Google Earth Engine Data Catalog: Landsat and MODIS datasets. Available at: https://developers.google.com/earth-engine (Accessed: 2026).\nLiao, Y. et al. (2023) Surface urban heat island detected by all-weather satellite land surface temperature. Remote Sensing of Environment.",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Week 8: Urban Temperature Patterns using Google Earth Engine</span>"
+    ]
+  },
+  {
+    "objectID": "week9.html",
+    "href": "week9.html",
+    "title": "10  Week 9: Synthetic Aperture Radar (SAR) for Land Surface Analysis",
+    "section": "",
+    "text": "10.1 Summary\nThis week focused on the use of Synthetic Aperture Radar (SAR) data for analysing land surface characteristics. Unlike optical satellite imagery, SAR uses microwave signals and is not affected by cloud cover or atmospheric conditions, making it particularly useful for consistent Earth observation.\nThe aim of this practical was to explore how SAR data can be used to distinguish different land surface types. Sentinel-1 data were used to analyse Beijing, with particular attention given to different polarisation bands (VV and VH). The analysis also explored the differences between these bands and how they represent urban, water, and vegetated surfaces.",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Week 9: Synthetic Aperture Radar (SAR) for Land Surface Analysis</span>"
+    ]
+  },
+  {
+    "objectID": "week9.html#applications",
+    "href": "week9.html#applications",
+    "title": "10  Week 9: Synthetic Aperture Radar (SAR) for Land Surface Analysis",
+    "section": "10.2 Applications",
+    "text": "10.2 Applications\n\n\n\n\n\n\nFigure 10.1: Figure 1. Study area: Beijing boundary.\n\n\n\nThe study area was defined using the GAUL administrative boundary dataset. This boundary was used to clip all SAR data to ensure that the analysis focused only on Beijing.\n\n\n\n\n\n\nFigure 10.2: Figure 2. SAR VV polarisation.\n\n\n\nSentinel-1 SAR data were used to analyse surface characteristics. The VV polarisation image (Figure 2) shows strong backscatter in urban areas, which appear brighter due to the presence of buildings and infrastructure. In contrast, water bodies appear very dark due to low backscatter, while vegetated areas show intermediate values.\n\n\n\n\n\n\nFigure 10.3: Figure 3. SAR VH polarisation.\n\n\n\nThe VH polarisation image (Figure 3) provides additional information about surface properties. Compared to VV, the VH image appears smoother and is more sensitive to vegetation structure. This makes it useful for distinguishing vegetated areas from built-up regions.\n\n\n\n\n\n\nFigure 10.4: Figure 4. VV–VH difference.\n\n\n\nThe difference between VV and VH polarisations was also calculated (Figure 4). However, the contrast is less distinct compared to the individual VV and VH images. This suggests that, in this case, the individual polarisation bands provide clearer information for interpreting land surface characteristics.",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Week 9: Synthetic Aperture Radar (SAR) for Land Surface Analysis</span>"
+    ]
+  },
+  {
+    "objectID": "week9.html#reflection",
+    "href": "week9.html#reflection",
+    "title": "10  Week 9: Synthetic Aperture Radar (SAR) for Land Surface Analysis",
+    "section": "10.3 Reflection",
+    "text": "10.3 Reflection\nThis week introduced the use of Synthetic Aperture Radar (SAR) data, which differs significantly from optical satellite imagery. One key advantage of SAR is that it is not affected by cloud cover, making it particularly useful for consistent monitoring.\nThrough this practical, I learned that different polarisation bands provide different types of information. The VV polarisation was most effective for identifying urban areas, as built-up surfaces produced strong backscatter signals. In contrast, VH was more sensitive to vegetation, allowing for better differentiation of natural surfaces.\nComparing VV and VH also highlighted how SAR can be used to interpret surface structure rather than spectral properties. Although the VV–VH difference was explored, it provided less clear contrast in this case, indicating that simpler visualisation methods may sometimes be more effective.",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Week 9: Synthetic Aperture Radar (SAR) for Land Surface Analysis</span>"
+    ]
+  },
+  {
+    "objectID": "week9.html#references",
+    "href": "week9.html#references",
+    "title": "10  Week 9: Synthetic Aperture Radar (SAR) for Land Surface Analysis",
+    "section": "10.4 References",
+    "text": "10.4 References\n\nSchulte to Bühne, H. and Pettorelli, N. (2018) Better together: Integrating and fusing multispectral and radar satellite imagery to inform biodiversity monitoring, ecological research and conservation science. Methods in Ecology and Evolution, 9, pp. 849–865.\nLu, D., Li, G., Moran, E., Dutra, L. and Batistella, M. (2011) A comparison of multisensor integration methods for land cover classification in the Brazilian Amazon. GIScience & Remote Sensing, 48(3), pp. 345–370.\nDabboor, M. and Brisco, B. (2018) Wetland monitoring and mapping using Synthetic Aperture Radar. In: Wetlands Management – Assessing Risk and Sustainable Solutions. IntechOpen.\nGoogle (2023) Google Earth Engine Data Catalog: Sentinel-1 SAR data. Available at: https://developers.google.com/earth-engine (Accessed: 2026).",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Week 9: Synthetic Aperture Radar (SAR) for Land Surface Analysis</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#contents",
+    "href": "index.html#contents",
+    "title": "CASA0023 Learning Diary",
+    "section": "1.1 Contents",
+    "text": "1.1 Contents\n\n\n\n\n  \n    Week 1\n    Introduction to Earth Observation and the EO Dashboard\n    Foundations\n    →\n  \n\n  \n    Week 2\n    Sentinel-2: Spectral Capabilities and Urban Applications\n    Sensors\n    →\n  \n\n  \n    Week 3\n    Remote Sensing Data and Corrections\n    Processing\n    →\n  \n\n  \n    Week 4\n    Policy and EO — Ahmedabad Heat Action Plan\n    Policy\n    →\n  \n\n  \n    Week 5\n    GEE I — Landsat, NDVI, Texture and PCA over Ahmedabad\n    GEE\n    →\n  \n\n  \n    Week 6\n    Classification I — Random Forest Land Cover Mapping\n    Classification\n    →\n  \n\n  \n    Week 7\n    Classification II — Sub-pixel Unmixing and Object-based Analysis\n    Classification\n    →\n  \n\n  \n    Week 8\n    Urban Heat — LST, MODIS Time Series and Ward Heat Index\n    Temperature\n    →\n  \n\n  \n    Week 9\n    SAR Change Detection — Tianjin Port Explosion\n    SAR\n    →\n  \n\n  \n    Bibliography\n    Full Reference List\n    References\n    →",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Preface</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#about-this-diary",
+    "href": "index.html#about-this-diary",
+    "title": "CASA0023 Learning Diary",
+    "section": "1.2 About this diary",
+    "text": "1.2 About this diary\nThe module runs across Term 2 and covers the full remote sensing pipeline — from sensor physics and data corrections through to classification, temperature analysis, and SAR. The diary entries are written shortly after each lecture and practical session, so they reflect what stood out at the time rather than a polished retrospective.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Preface</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#module-overview-quick-notes",
+    "href": "index.html#module-overview-quick-notes",
+    "title": "CASA0023 Learning Diary",
+    "section": "1.1 Module Overview (Quick Notes)",
+    "text": "1.1 Module Overview (Quick Notes)\n\n1.1.1 Assessment 1 (30%)\n\nFormat: Group presentation (10 minutes)\nTopic: Policy-focused Earth Observation (EO) pitch\n\n\n\n1.1.2 Assessment 2 (70%)\n\nFormat: Weekly learning diary (this site)\n\n\n\nNote: This diary serves as a continuous record of my learning journey throughout the term, exploring the intersection of remote sensing technology and urban policy.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Learning Diary</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#weekly-learning-entries",
+    "href": "index.html#weekly-learning-entries",
+    "title": "CASA0023 Learning Diary",
+    "section": "1.1 📚 Weekly Learning Entries",
+    "text": "1.1 📚 Weekly Learning Entries\n\nWeek 1: Getting Started with Remote Sensing Week 2: Sentinel-2 and Reproducible Research Week 3: Remote Sensing Data and Corrections Week 4: Remote Sensing for Urban Policy Week 5: Google Earth Engine for Remote Sensing Analysis Week 6: Supervised Classification using Google Earth Engine Week 7: Object-based Classification using Google Earth Engine Week 8: Urban Temperature Patterns using Google Earth Engine Week 9: Synthetic Aperture Radar (SAR) for Land Surface Analysis",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Learning Diary</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#module-overview",
+    "href": "index.html#module-overview",
+    "title": "CASA0023 Learning Diary",
+    "section": "1.2 📝 Module Overview",
+    "text": "1.2 📝 Module Overview\n\n1.2.1 Assessment 1 (30%)\n\nFormat: Group presentation (10 minutes)\nTopic: Policy-focused Earth Observation (EO) pitch\n\n\n\n1.2.2 Assessment 2 (70%)\n\nFormat: Weekly learning diary (this site)",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Learning Diary</span>"
+    ]
+  }
+]
