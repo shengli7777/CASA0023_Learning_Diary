@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Sentinel-2 Satellite Sensor</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Sheng Li" />
+    <script src="libs/header-attrs-2.30/header-attrs.js"></script>
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# Sentinel-2 Satellite Sensor
+]
+.subtitle[
+## CASA0023 Remotely Sensing Cities and Environments
+]
+.author[
+### Sheng Li
+]
+.date[
+### 2026/03/16
+]
+
+---
+
+
+&lt;style&gt;
+/* 缩小全局字号和行间距以容纳更多内容 */
+.remark-slide-content {
+  font-size: 20px;
+  padding: 15px 50px 15px 50px;
+}
+p, li {
+  line-height: 1.2;
+}
+h1 { font-size: 35px; color: #23395b; }
+h3 { font-size: 22px; margin-top: 5px; margin-bottom: 5px; }
+table { font-size: 16px; }
+.small-text { font-size: 0.7em; }
+&lt;/style&gt;
+
+# 1. Introduction
+
+Sentinel-2 is an Earth observation satellite mission developed by the **European Space Agency (ESA)** as part of the **Copernicus programme**.
+
+.center[
+&lt;img src="images/f1801aeba81fc8c4f47ae3ffc9fa0279.jpg" width="45%"/&gt;
+&lt;br&gt;
+.small-text[*Sentinel-2 satellites provide multispectral imagery for Earth observation.*]
+]
+
+---
+
+# 1.1 Objectives &amp; Constellation
+
+### Main Objectives:
+* **Monitor** land cover change 
+* **Support** environmental monitoring 
+* **Provide** data for agriculture and urban analysis 
+
+### Constellation:
+* **Sentinel-2A** (launched in 2015) 
+* **Sentinel-2B** (launched in 2017)
+* Together they provide **global coverage every 5 days**.
+
+---
+
+# 2. Sensor Characteristics
+
+Sentinel-2 carries a **Multispectral Instrument (MSI)**.
+
+### Key Technical Specs:
+* **13 spectral bands** (from VNIR to SWIR)
+* **Spatial Resolution:**
+  * **10 m**: Visible (B2, B3, B4) and NIR (B8)
+  * **20 m**: Red-edge and Shortwave Infrared (SWIR)
+  * **60 m**: Atmospheric bands (Coastal aerosol, Water vapour, Cirrus)
+
+This high spatial resolution allows detailed monitoring of land surfaces.
+
+---
+
+# 3. Spectral Bands
+
+Different surfaces reflect electromagnetic radiation differently across the spectrum.
+
+.center[
+&lt;img src="images/928977fefd9f6eb1145725ce1f2aa377.png" width="55%"/&gt;
+&lt;br&gt;
+.small-text[*The Sentinel-2 MSI sensor captures 13 spectral bands across visible, near-infrared and shortwave infrared wavelengths.*]
+]
+
+---
+
+# 3.1 Detailed Spectral Bands
+
+| Band | Description | Wavelength (nm) | Resolution | Application |
+|:---:|:---|:---:|:---:|:---|
+| **B2** | Blue | 490 | 10m | Water &amp; Atmosphere |
+| **B3** | Green | 560 | 10m | Vegetation reflectance |
+| **B4** | Red | 665 | 10m | Land cover detection |
+| **B8** | NIR | 842 | 10m | **Vegetation health** |
+| **B11**| SWIR 1 | 1610 | 20m | Snow/Ice/Cloud discrimination |
+| **B12**| SWIR 2 | 2190 | 20m | Vegetation moisture |
+
+These bands allow researchers to analyse environmental features that cannot be seen in normal photographs.
+
+---
+
+# 4. True Colour Composite (TCC)
+
+True colour imagery simulates human vision by using the visible spectrum:
+
+* **Red:** Band 4 (B04)
+* **Green:** Band 3 (B03)
+* **Blue:** Band 2 (B02)
+
+### Typical Applications:
+* **Urban mapping**: Identifying buildings, roads, and infrastructure.
+* **Land cover interpretation**: Distinguishing between forest, water, and soil.
+* **Visual analysis**: General landscape surveys.
+
+---
+
+# 5. False Colour Composite (FCC)
+
+Standard False Colour (NIR-Red-Green) is widely used for ecology:
+
+.center[
+&lt;img src="images/92c526d2df644f69d2667c2ef509ab2a.jpg" width="30%"/&gt;
+&lt;br&gt;
+.small-text[*False colour composites highlight vegetation using near-infrared reflectance.*]
+]
+
+* **NIR:** Band 8 (B08) -&gt; Rendered as **Red**
+* **Red:** Band 4 (B04) -&gt; Rendered as **Green**
+* **Green:** Band 3 (B03) -&gt; Rendered as **Blue**
+
+---
+
+# 5.1 Why Use False Colour?
+
+### Why use it?
+* **Vegetation** appears **bright red** due to high NIR reflectance (mesophyll structure).
+* **Water** appears dark or black because it absorbs most NIR radiation.
+* **Soil** appears in shades of brown or cyan depending on moisture and composition.
+
+### Key Benefits:
+* **Plant Health**: Reveals subtle variations in vegetation vigor.
+* **Delineation**: Differentiates vegetation types and water bodies much more clearly than TCC.
+* **Land Use**: Useful for identifying agricultural patterns and forest density.
+
+---
+
+# 6. Environmental Applications
+
+Sentinel-2's high revisit frequency makes it ideal for dynamic monitoring:
+
+### Ecosystems &amp; Hydrology:
+* **Forestry**: Deforestation tracking and fire scar mapping.
+* **Agriculture**: Crop yield prediction and precision farming.
+* **Water Quality**: Monitoring chlorophyll-a and turbidity in inland waters.
+* **Disasters**: Flood mapping and glacial retreat monitoring.
+
+The open access nature of the data has made Sentinel-2 widely used in global research.
+
+---
+
+# 7. Urban Applications
+
+Sentinel-2 is a game-changer for **Urban Remote Sensing**:
+
+* **Urban Expansion**: Tracking the conversion of rural land to built-up areas.
+* **Green Spaces**: Identifying "Green Lungs" within cities for planning.
+* **Heat Island Effects**: Provides NDVI data needed to model the **Urban Heat Island (UHI)** effect.
+
+Satellite imagery provides valuable spatial information for understanding cities.
+
+---
+
+# 8. Advantages and Limitations
+
+### Advantages 👍
+* **High Resolution**: 10m is superior to Landsat-8's 30m.
+* **Revisit Time**: 5-day cycle is perfect for time-series.
+* **Open Access**: Free for everyone via Copernicus Open Access Hub.
+
+### Limitations 👎
+* **Cloud Cover**: Optical sensors cannot see through **clouds**.
+* **No Thermal Band**: Cannot directly measure surface temperature.
+
+---
+
+# 9. Conclusion
+
+Sentinel-2 provides **high-resolution multispectral imagery** that is widely used in remote sensing.
+
+It plays an important role in:
+
+- Environmental monitoring
+- Urban analysis
+- Sustainable development research
+
+Satellite imagery provides valuable insights for understanding and managing the Earth's surface.
+
+---
+
+# References
+
+* European Space Agency (ESA). *Sentinel-2 Mission Overview*.
+* Jensen, J. R. (2015). *Introductory Digital Image Processing.*
+* Copernicus Programme Documentation.
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+  "highlightStyle": "github",
+  "countIncrementalSlides": false,
+  "ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

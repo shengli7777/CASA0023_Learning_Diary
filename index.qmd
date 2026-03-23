@@ -1,0 +1,45 @@
+---
+title: "Introduction"
+author: "Sheng Li"
+format:
+  html:
+    toc: true
+    theme: cosmo
+---
+
+# 💼 Welcome
+
+This is my learning diary for **CASA0023: Remotely Sensing Cities and Environments**.
+
+The diary is organised by week. Each entry follows the same structure:
+
+-   **Summary** – key ideas from the lecture/practical, in my own words
+-   **Applications** – examples of how these ideas are used (papers, policy, real-world cases)
+-   **Reflection** – what I understood well, what I’m unsure about, and how I might use it later
+
+# 🐱 About me
+
+I’m Sheng Li, a postgraduate student at UCL CASA pursuing the MSc in Urban Spatial Science. I completed my undergraduate degree in Architectural Design at Hanyang University, South Korea, where I focused on urban form, spatial design, and people-centred built environments. My background in architecture gave me a strong foundation in understanding city structure, human-scale space, and design-led thinking about urban systems.
+
+Moving to CASA felt like a natural evolution: I bring the design perspective of shaping physical space, while now expanding into data-driven analysis, computational modelling, and quantitative methods to explore cities more deeply. I am particularly interested in bridging architectural design with urban analytics, using spatial data to better understand, visualise, and support smarter, more liveable urban environments.
+
+------------------------------------------------------------------------
+
+# 📚 Weekly Learning Entries
+
+::: {.d-grid .gap-2}
+[Week 1: Getting Started with Remote Sensing](week1.qmd){.btn .btn-outline-primary .btn-lg role="button"} [Week 2: Sentinel-2 and Reproducible Research](week2.qmd){.btn .btn-outline-primary .btn-lg role="button"} [Week 3: Remote Sensing Data and Corrections](week3.qmd){.btn .btn-outline-primary .btn-lg role="button"} [Week 4: Remote Sensing for Urban Policy](week4.qmd){.btn .btn-outline-primary .btn-lg role="button"} [Week 5: Google Earth Engine for Remote Sensing Analysis](week5.qmd){.btn .btn-outline-primary .btn-lg role="button"} [Week 6: Supervised Classification using Google Earth Engine](week6.qmd){.btn .btn-outline-primary .btn-lg role="button"} [Week 7: Object-based Classification using Google Earth Engine](week7.qmd){.btn .btn-outline-primary .btn-lg role="button"} [Week 8: Urban Temperature Patterns using Google Earth Engine](week8.qmd){.btn .btn-outline-primary .btn-lg role="button"} [Week 9: Synthetic Aperture Radar (SAR) for Land Surface Analysis](week9.qmd){.btn .btn-outline-primary .btn-lg role="button"}
+:::
+
+------------------------------------------------------------------------
+
+# 📝 Module Overview
+
+## Assessment 1 (30%)
+
+-   **Format**: Group presentation (10 minutes)
+-   **Topic**: Policy-focused Earth Observation (EO) pitch
+
+## Assessment 2 (70%)
+
+-   **Format**: Weekly learning diary (this site)

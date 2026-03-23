@@ -1,0 +1,59 @@
+---
+title: "References"
+author: "Sheng Li"
+format:
+  html:
+    toc: true
+    theme: cosmo
+    link-external-newwindow: true
+---
+
+## Bibliography
+
+* **Amani, M. et al. (2020)**. ‘Google Earth Engine cloud computing platform for remote sensing big data applications: a comprehensive review’, *IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing*, 13, pp. 5326–5350. Available at: [https://doi.org/10.1109/JSTARS.2020.3021052](https://doi.org/10.1109/JSTARS.2020.3021052).
+
+* **Azhar, G.S. et al. (2014)**. ‘Heat-related mortality in India: excess all-cause mortality associated with the 2010 Ahmedabad heat wave’, *PLOS ONE*, 9(3), p. e91831. Available at: [https://doi.org/10.1371/journal.pone.0091831](https://doi.org/10.1371/journal.pone.0091831).
+
+* **Ballinger, O. (2020)**. ‘Building a 3D model of the Beirut explosion’, online article. Available at: [https://oballinger.github.io/beirut-3D-model/](https://oballinger.github.io/beirut-3D-model/) (Accessed: 2026).
+
+* **Butcher, G. (2016)**. ‘The role of remote sensing in monitoring the SDGs’. Available at: [https://www.un.org/](https://www.un.org/) (Accessed: 2026).
+
+* **Copernicus Programme (2023)**. *Sentinel-2 mission documentation*. Available at: [https://www.copernicus.eu](https://www.copernicus.eu) (Accessed: 2026).
+
+* **Dabboor, M. and Brisco, B. (2018)**. ‘Wetland monitoring and mapping using synthetic aperture radar’, in *Wetlands Management – Assessing Risk and Sustainable Solutions*. London: IntechOpen. Available at: [https://doi.org/10.5772/intechopen.74544](https://doi.org/10.5772/intechopen.74544).
+
+* **European Space Agency (2023)**. *Sentinel-2 mission overview*. Available at: [https://www.esa.int](https://www.esa.int) (Accessed: 2026).
+
+* **Gerasopoulos, E. et al. (2022)**. ‘Earth observation: an integral part of a smart and sustainable city’, *Environmental Science & Policy*, 132, pp. 84–97. Available at: [https://doi.org/10.1016/j.envsci.2022.02.003](https://doi.org/10.1016/j.envsci.2022.02.003).
+
+* **Google (2023a)**. ‘Google Earth Engine data catalog: Landsat and MODIS datasets’. Available at: [https://developers.google.com/earth-engine/datasets](https://developers.google.com/earth-engine/datasets) (Accessed: 2026).
+
+* **Google (2023b)**. ‘Google Earth Engine data catalog: Sentinel-1 SAR data’. Available at: [https://developers.google.com/earth-engine/datasets](https://developers.google.com/earth-engine/datasets) (Accessed: 2026).
+
+* **Google (2023c)**. ‘Google Earth Engine data catalog: Sentinel-2 MSI surface reflectance harmonized’. Available at: [https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_S2_SR_HARMONIZED](https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_S2_SR_HARMONIZED) (Accessed: 2026).
+
+* **Gorelick, N. et al. (2017)**. ‘Google Earth Engine: planetary-scale geospatial analysis for everyone’, *Remote Sensing of Environment*, 202, pp. 18–27.
+
+* **Greater London Authority (2023)**. *Statistical GIS boundary files for London*. Available at: [https://data.london.gov.uk/dataset/statistical-gis-boundary-files-for-london-20od9](https://data.london.gov.uk/dataset/statistical-gis-boundary-files-for-london-20od9) (Accessed: 2026).
+
+* **Jensen, J.R. (2015)**. *Introductory digital image processing: a remote sensing perspective*. 4th ed. Harlow: Pearson.
+
+* **Kadhim, N. et al. (2016)**. ‘Advances in remote sensing applications for urban sustainability’, *Euro-Mediterranean Journal for Environmental Integration*, 1, p. 7. Available at: [https://doi.org/10.1007/s41207-016-0007-4](https://doi.org/10.1007/s41207-016-0007-4).
+
+* **Liao, Y. et al. (2022)**. ‘Surface urban heat island detected by all-weather satellite land surface temperature’, *Science of the Total Environment*, 811, p. 151405. Available at: [https://doi.org/10.1016/j.scitotenv.2021.151405](https://doi.org/10.1016/j.scitotenv.2021.151405).
+
+* **Lu, D. et al. (2011)**. ‘A comparison of multisensor integration methods for land cover classification in the Brazilian Amazon’, *GIScience & Remote Sensing*, 48(3), pp. 345–370.
+
+* **Martinez, A. de la I. and Labib, S.M. (2023)**. ‘Demystifying normalized difference vegetation index (NDVI) for greenness exposure assessments and policy interventions in urban greening’, *Environmental Research*, 220, p. 115155. Available at: [https://doi.org/10.1016/j.envres.2022.115155](https://doi.org/10.1016/j.envres.2022.115155).
+
+* **Pal, M. and Mather, P.M. (2005)**. ‘Support vector machines for classification in remote sensing’, *International Journal of Remote Sensing*, 26(5), pp. 1007–1011.
+
+* **Schulte to Bühne, H. and Pettorelli, N. (2018)**. ‘Better together: integrating and fusing multispectral and radar satellite imagery to inform biodiversity monitoring, ecological research and conservation science’, *Methods in Ecology and Evolution*, 9(4), pp. 849–865. Available at: [https://doi.org/10.1111/2041-210X.12942](https://doi.org/10.1111/2041-210X.12942).
+
+* **Tempfli, K. et al. (2009)**. *Principles of remote sensing: an introductory textbook*. Enschede: International Institute for Geo-Information Science and Earth Observation. Available at: [https://research.utwente.nl/en/publications/principles-of-remote-sensing-an-introductory-textbook-4/](https://research.utwente.nl/en/publications/principles-of-remote-sensing-an-introductory-textbook-4/) (Accessed: 2026).
+
+* **United Nations (2015)**. *Transforming our world: the 2030 Agenda for Sustainable Development*. Available at: [https://sdgs.un.org/goals](https://sdgs.un.org/goals) (Accessed: 2026).
+
+* **U.S. Geological Survey (2020)**. *Landsat 8 Collection 2 Level-2 science product guide*. Available at: [https://www.usgs.gov/media/files/landsat-8-9-collection-2-level-2-science-product-guide](https://www.usgs.gov/media/files/landsat-8-9-collection-2-level-2-science-product-guide) (Accessed: 2026).
+
+* **Wellmann, T. et al. (2020)**. ‘Remote sensing in urban planning: contributions towards ecologically sound policies?’, *Landscape and Urban Planning*, 204, p. 103921. Available at: [https://doi.org/10.1016/j.landurbplan.2020.103921](https://doi.org/10.1016/j.landurbplan.2020.103921).

@@ -1,0 +1,42 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "li_quarto",
+    "section": "",
+    "text": "Preface\nThis is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books.\n\n1 + 1\n\n[1] 2",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "week2.html",
+    "href": "week2.html",
+    "title": "1  Week 2: Remote Sensing Sensors",
+    "section": "",
+    "text": "2 Week 2: Remote Sensing Sensors\nThis week, I studied the Sentinel-2 satellite mission. Below is the interactive presentation that details the technical specifications and spectral bands.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Week 2: Remote Sensing Sensors</span>"
+    ]
+  },
+  {
+    "objectID": "week2.html#my-weekly-presentation",
+    "href": "week2.html#my-weekly-presentation",
+    "title": "1  Week 2: Remote Sensing Sensors",
+    "section": "2.1 My Weekly Presentation",
+    "text": "2.1 My Weekly Presentation\nTo view the slides in full screen, please click the blue button below. You can also use the interactive frame to browse the content directly.\nView Full Screen Slides\n\n\n2.1.1 Interactive Slides Preview\n```{=html}",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Week 2: Remote Sensing Sensors</span>"
+    ]
+  },
+  {
+    "objectID": "summary.html",
+    "href": "summary.html",
+    "title": "2  Summary",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Summary</span>"
+    ]
+  }
+]
