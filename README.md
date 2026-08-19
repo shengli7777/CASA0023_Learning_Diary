@@ -28,15 +28,15 @@ The portfolio includes practical work involving:
 
 ## Weekly Portfolio
 
-- [Week 1](week1.qmd) - Introduction to remote-sensing concepts and workflows
-- [Week 2](week2.qmd) - Sentinel-2 and reproducible research
-- [Week 3](week3.qmd) - Satellite data processing and interpretation
-- [Week 4](week4.qmd) - Image analysis and spatial visualisation
-- [Week 5](week5.qmd) - Spectral and texture-based analysis
-- [Week 6](week6.qmd) - Land-cover classification
-- [Week 7](week7.qmd) - Advanced image processing
-- [Week 8](week8.qmd) - Multi-sensor and environmental analysis
-- [Week 9](week9.qmd) - Synthetic Aperture Radar analysis
+- [Week 1](https://shengli7777.github.io/CASA0023_Learning_Diary/week1.html) - Introduction to remote-sensing concepts and workflows
+- [Week 2](https://shengli7777.github.io/CASA0023_Learning_Diary/week2.html) - Sentinel-2 and reproducible research
+- [Week 3](https://shengli7777.github.io/CASA0023_Learning_Diary/week3.html) - Satellite data processing and interpretation
+- [Week 4](https://shengli7777.github.io/CASA0023_Learning_Diary/week4.html) - Image analysis and spatial visualisation
+- [Week 5](https://shengli7777.github.io/CASA0023_Learning_Diary/week5.html) - Spectral and texture-based analysis
+- [Week 6](https://shengli7777.github.io/CASA0023_Learning_Diary/week6.html) - Land-cover classification
+- [Week 7](https://shengli7777.github.io/CASA0023_Learning_Diary/week7.html) - Advanced image processing
+- [Week 8](https://shengli7777.github.io/CASA0023_Learning_Diary/week8.html) - Multi-sensor and environmental analysis
+- [Week 9](https://shengli7777.github.io/CASA0023_Learning_Diary/week9.html) - Synthetic Aperture Radar analysis
 
 The individual weekly pages include code, maps, visual outputs, methodological explanations and short reflections on the analytical process.
 
