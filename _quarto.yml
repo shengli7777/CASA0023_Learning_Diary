@@ -6,7 +6,7 @@ project:
 
 book:
   title: "CASA0023 Learning Diary"
-  author: "Norah Jones"
+  author: "Sheng Li"
   chapters:
     - index.qmd
     - week1.qmd
